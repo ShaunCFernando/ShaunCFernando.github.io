@@ -56,6 +56,18 @@
 table1, th1, td1, tr1 {
   border: 1px solid black;
 }
+     .inner-table {
+      border-collapse: separate; /* or collapse */
+      border: 1px solid #333;
+      width: 100%;
+      border-spacing: 10px; /* spacing between cells */
+    }
+
+    .inner-table td, .inner-table th {
+      border: 1px solid #666;
+      padding: 8px 12px;
+      text-align: left;
+    }
   </style>
 
 </head>
@@ -79,7 +91,7 @@ table1, th1, td1, tr1 {
                     <sub-hdr>Quick look at the numbers as of May 2025</sub-hdr>
                   </p>
                   <p>
-                    <table style="width:100%;max-width:800px;border:1px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                    <table class="inner-table">
   <tr>
     <th>UTR(S)</th>
     <th>UTR(D)</th> 
